@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //import App from './App';
-import './index.css';
+import './index.css'; 
+
+
+let mas =[1, 6, 90, 512, 1];
+let test = mas.reduce((max, value) => Math.max(max, value),  0)
+
+console.log(test);
+
 
 class Clock extends React.Component {
   constructor(props) {
@@ -70,7 +77,7 @@ class Final extends React.Component {
   render() {
     return (
       <div>
-        <h1>Lesson 5 </h1>
+        <h1>Lesson 10 </h1>
         <TypesOfFood/>,
         <Clock/>
       </div>
