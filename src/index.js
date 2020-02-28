@@ -70,7 +70,7 @@ class Final extends React.Component {
   render() {
     return (
       <div>
-        <h1>Lesson 5</h1>
+        <h1>Lesson 5 </h1>
         <TypesOfFood/>,
         <Clock/>
       </div>
