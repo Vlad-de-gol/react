@@ -4,10 +4,23 @@ import ReactDOM from 'react-dom';
 import './index.css'; 
 
 
-let mas =[1, 6, 90, 512, 1];
-let test = mas.reduce((max, value) => Math.max(max, value),  0)
+const person = {
+  name:{
+    first:'Peter',
+    last:'Smith'
+  },
+  age:27
+};
 
-console.log(test);
+const text = `
+  <ul>
+    <li>${person.name.first}</li>
+    <li>${person.name.last}</li>
+    <li>${person.age}</li>
+  </ul>
+`;
+
+console.log(text);
 
 
 class Clock extends React.Component {
@@ -31,7 +44,7 @@ const TypesOfFruit = () => {
     <div>
       <h2>Fruits:</h2>
       <ul>
-        <li>Apples</li>
+        <li>Apples plus</li>
         <li>Blueberries</li>
         <li>Strawberries</li>
         <li>Bananas</li>
