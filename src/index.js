@@ -4,23 +4,27 @@ import ReactDOM from 'react-dom';
 import './index.css'; 
 
 
-const person = {
-  name:{
-    first:'Peter',
-    last:'Smith'
-  },
-  age:27
-};
+function Animal(name, voice){ 
+  this.name = name;
+  this.voice = voice;  
+}
 
-const text = `
-  <ul>
-    <li>${person.name.first}</li>
-    <li>${person.name.last}</li>
-    <li>${person.age}</li>
-  </ul>
-`;
+Animal.prototype.say = function(){
+  console.log(this.name, 'voice', this.voice);
+  
+}
 
-console.log(text);
+const dog = new Animal('Dog','woof');
+const cat = new Animal('Cat','meay');
+
+
+
+dog.say();
+cat.say();
+
+
+let animalPull = {};
+console.log(animalPull);
 
 
 class Clock extends React.Component {
